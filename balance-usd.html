@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Balance USD</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230425210004">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<main class="cabinet">
+			<sidebar class="cabinet__sidebar sidebar-cabinet">
+				<div class="sidebar-cabinet__content">
+					<a href="#" class="sidebar-cabinet__logo">
+						<img src="img/logo-white.svg" alt="Logo" />
+					</a>
+					<nav data-spollers class="sidebar-cabinet__body">
+						<a href="dashboard.html" class="button sidebar-cabinet__logout sidebar-cabinet__item">
+							<svg class="sidebar-cabinet__item-svg">
+								<use xlink:href="img/icons/icons.svg#dashboard"></use>
+							</svg>
+							<span>Dashboard</span>
+						</a>
+						<div class="sidebar-cabinet__spoller-item">
+							<button type="button" data-spoller class="button sidebar-cabinet__logout sidebar-cabinet__item">
+								<svg class="sidebar-cabinet__item-svg">
+									<use xlink:href="img/icons/icons.svg#analytics"></use>
+								</svg>
+								<span>Analytics</span>
+								<svg class="sidebar-cabinet__item-svg--arrow">
+									<use xlink:href="img/icons/icons.svg#arrow"></use>
+								</svg>
+							</button>
+							<div class="sidebar-cabinet__spoller-body">
+								<a href="history-activation.html" class="button sidebar-cabinet__spoller-button">
+									<svg class="sidebar-cabinet__spoller-button-svg">
+										<use xlink:href="img/icons/icons.svg#circle-check"></use>
+									</svg>
+									<span>History Activation</span>
+								</a>
+								<a href="sim-cards.html" type="button" class="button sidebar-cabinet__spoller-button">
+									<svg class="sidebar-cabinet__spoller-button-svg">
+										<use xlink:href="img/icons/icons.svg#sim"></use>
+									</svg>
+									<span>Sim Cards</span>
+								</a>
+							</div>
+						</div>
+						<div class="sidebar-cabinet__spoller-item">
+							<button type="button" data-spoller class="button sidebar-cabinet__logout sidebar-cabinet__item">
+								<svg class="sidebar-cabinet__item-svg">
+									<use xlink:href="img/icons/icons.svg#workers"></use>
+								</svg>
+								<span>Workers</span>
+								<svg class="sidebar-cabinet__item-svg--arrow">
+									<use xlink:href="img/icons/icons.svg#arrow"></use>
+								</svg>
+							</button>
+							<div class="sidebar-cabinet__spoller-body">
+								<a href="worker.html" class="button sidebar-cabinet__spoller-button sidebar-cabinet__spoller-button--green">
+									<span>UKOut2 (105229103)</span>
+								</a>
+								<a href="#" class="button sidebar-cabinet__spoller-button sidebar-cabinet__spoller-button--red">
+									<span>newworktest</span>
+								</a>
+								<a href="worker-add.html" class="button sidebar-cabinet__spoller-button sidebar-cabinet__spoller-button--add">
+									<svg class="sidebar-cabinet__item-svg">
+										<use xlink:href="img/icons/icons.svg#add"></use>
+									</svg>
+									<span>Add</span>
+								</a>
+							</div>
+						</div>
+						<div class="sidebar-cabinet__spoller-item">
+							<button type="button" data-spoller class="button sidebar-cabinet__logout sidebar-cabinet__item">
+								<svg class="sidebar-cabinet__item-svg">
+									<use xlink:href="img/icons/icons.svg#workers"></use>
+								</svg>
+								<span>API Workers</span>
+								<svg class="sidebar-cabinet__item-svg--arrow">
+									<use xlink:href="img/icons/icons.svg#arrow"></use>
+								</svg>
+							</button>
+							<div class="sidebar-cabinet__spoller-body">
+								<button type="button" class="button sidebar-cabinet__spoller-button sidebar-cabinet__spoller-button--green">
+									<span>UKOut2 (105229103)</span>
+								</button>
+								<button type="button" class="button sidebar-cabinet__spoller-button sidebar-cabinet__spoller-button--red">
+									<span>newworktest</span>
+								</button>
+								<button type="button" class="button sidebar-cabinet__spoller-button sidebar-cabinet__spoller-button--add">
+									<svg class="sidebar-cabinet__item-svg">
+										<use xlink:href="img/icons/icons.svg#add"></use>
+									</svg>
+									<span>Add</span>
+								</button>
+							</div>
+						</div>
+						<a href="users.html" class="button sidebar-cabinet__logout sidebar-cabinet__item">
+							<svg class="sidebar-cabinet__item-svg">
+								<use xlink:href="img/icons/icons.svg#users"></use>
+							</svg>
+							<span>Users</span>
+						</a>
+						<div class="sidebar-cabinet__spoller-item">
+							<button type="button" data-spoller class="button sidebar-cabinet__logout sidebar-cabinet__item">
+								<svg class="sidebar-cabinet__item-svg">
+									<use xlink:href="img/icons/icons.svg#billing"></use>
+								</svg>
+								<span>Billing</span>
+								<svg class="sidebar-cabinet__item-svg--arrow">
+									<use xlink:href="img/icons/icons.svg#arrow"></use>
+								</svg>
+							</button>
+							<div class="sidebar-cabinet__spoller-body">
+								<a href="balance-usd.html" class="button sidebar-cabinet__spoller-button item-active">
+									<span>USD</span>
+								</a>
+								<button type="button" class="button sidebar-cabinet__spoller-button">
+									<span>EUR</span>
+								</button>
+							</div>
+						</div>
+						<a href="prices.html" class="button sidebar-cabinet__logout sidebar-cabinet__item">
+							<svg class="sidebar-cabinet__item-svg">
+								<use xlink:href="img/icons/icons.svg#prices"></use>
+							</svg>
+							<span>Prices</span>
+						</a>
+						<a href="support.html" class="button sidebar-cabinet__logout sidebar-cabinet__item">
+							<svg class="sidebar-cabinet__item-svg">
+								<use xlink:href="img/icons/icons.svg#support"></use>
+							</svg>
+							<span>Support</span>
+						</a>
+					</nav>
+					<button type="button" class="button sidebar-cabinet__logout sidebar-cabinet__item">
+						<svg class="sidebar-cabinet__item-svg">
+							<use xlink:href="img/icons/icons.svg#log-out"></use>
+						</svg>
+						<span>Log out</span>
+					</button>
+				</div>
+			</sidebar>
+			<div class="cabinet__body cabinet-body cabinet-body--overflow">
+				<div data-lp class="cabinet-body__header">
+					<button type="button" class="menu__icon icon-menu cabinet-icon-menu">
+						<span></span>
+					</button>
+					<div class="cabinet-body__header-content">
+						<div class="cabinet-body__header-balance">
+							<span>Balance</span>
+							<a href="#" class="cabinet-balance-US">0.0010$</a>
+							<a href="#" class="cabinet-balance-EUR">0.0010€</a>
+						</div>
+						<div class="cabinet-body__header-actions">
+							<div class="cabinet-body__header-language">
+								<select name="form[languages]" data-class-modif="actions-header-languages">
+									<option value="1" selected>Eng</option>
+									<option value="2">UA</option>
+								</select>
+							</div>
+
+							<button type="button" class="cabinet-body__header-user">
+								<div class="actions-header__user">
+									<svg class="actions-header__user-svg">
+										<use xlink:href="img/icons/icons.svg#user-white"></use>
+									</svg>
+								</div>
+							</button>
+						</div>
+					</div>
+				</div>
+				<h2 class="cabinet-body__title">Balance USD</h2>
+				<div class="cabinet-body__content balance">
+					<div class="balance__funds">
+						<div class="balance__earnings earnings">
+							<div class="earnings__header">
+								<div class="earnings__days">
+									<div class="earnings__days-left">
+										<button type="button" class="earnings__days-item">
+											Total
+										</button>
+									</div>
+									<div class="earnings__days-right">
+										<button type="button" class="earnings__days-item earnings__days-item--active">
+											1H
+										</button>
+										<button type="button" class="earnings__days-item">
+											24H
+										</button>
+										<button type="button" class="earnings__days-item">
+											1W
+										</button>
+										<button type="button" class="earnings__days-item">
+											1M
+										</button>
+										<button type="button" class="earnings__days-item">
+											1Y
+										</button>
+										<button type="button" class="earnings__days-item">
+											ALL
+										</button>
+									</div>
+								</div>
+								<div class="earnings__count">100$</div>
+							</div>
+							<div class="earnings__diagram">
+								<picture><source srcset="img/cabinet/diagram.webp" type="image/webp"><img src="img/cabinet/diagram.png" alt="Diagram" /></picture>
+							</div>
+							<div class="earnings__footer">
+								<div class="earnings__days-item">FEB 8</div>
+								<div class="earnings__days-item">FEB 8</div>
+								<div class="earnings__days-item">FEB 8</div>
+								<div class="earnings__days-item">FEB 8</div>
+								<div class="earnings__days-item">FEB 8</div>
+								<div class="earnings__days-item">FEB 8</div>
+							</div>
+						</div>
+						<a href="withdraw-funds.html" class="button balance__withdraw">
+							Withdraw funds
+						</a>
+					</div>
+					<div class="balance-table">
+						<div class="balance-table__title">History</div>
+
+						<div class="balance-table__body cabinet-shadow-box">
+							<div class="history-activations__content-wrapper">
+								<div class="balance-table__header">
+									<div class="balance-table__header-top balance-table__row">
+										<button type="button" class="balance-table__item">
+											ID
+										</button>
+										<button type="button" class="balance-table__item">
+											Operation type
+										</button>
+										<button type="button" class="balance-table__item">
+											Amount
+										</button>
+										<button type="button" class="balance-table__item">
+											Status
+										</button>
+										<button type="button" class="balance-table__item">
+											Date and Time
+										</button>
+									</div>
+								</div>
+								<div class="balance-table__rows">
+									<div class="balance-table__rows-item balance-table__row">
+										<div class="balance-table__item">
+											1c8df8e5-b9ed-4d1d-95a3-e35c9dde0a7c
+										</div>
+										<div class="balance-table__item">
+											testpartner@gmail.com
+										</div>
+										<div class="balance-table__item">+0.008 $</div>
+										<div class="balance-table__item">Confirmed</div>
+										<div class="balance-table__item balance-table__item--date">
+											<p>08:27:40</p>
+											<p>24-10-2022</p>
+										</div>
+									</div>
+									<div class="balance-table__rows-item balance-table__row">
+										<div class="balance-table__item">
+											1c8df8e5-b9ed-4d1d-95a3-e35c9dde0a7c
+										</div>
+										<div class="balance-table__item">
+											testpartner@gmail.com
+										</div>
+										<div class="balance-table__item">+0.008 $</div>
+										<div class="balance-table__item">Confirmed</div>
+										<div class="balance-table__item balance-table__item--date">
+											<p>08:27:40</p>
+											<p>24-10-2022</p>
+										</div>
+									</div>
+									<div class="balance-table__rows-item balance-table__row">
+										<div class="balance-table__item">
+											1c8df8e5-b9ed-4d1d-95a3-e35c9dde0a7c
+										</div>
+										<div class="balance-table__item">
+											testpartner@gmail.com
+										</div>
+										<div class="balance-table__item">+0.008 $</div>
+										<div class="balance-table__item">Confirmed</div>
+										<div class="balance-table__item balance-table__item--date">
+											<p>08:27:40</p>
+											<p>24-10-2022</p>
+										</div>
+									</div>
+									<div class="balance-table__rows-item balance-table__row">
+										<div class="balance-table__item">
+											1c8df8e5-b9ed-4d1d-95a3-e35c9dde0a7c
+										</div>
+										<div class="balance-table__item">
+											testpartner@gmail.com
+										</div>
+										<div class="balance-table__item">+0.008 $</div>
+										<div class="balance-table__item">Confirmed</div>
+										<div class="balance-table__item balance-table__item--date">
+											<p>08:27:40</p>
+											<p>24-10-2022</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<h2 class="cabinet-body__title">
+							<p>Showing 1 -1 of 1 items</p>
+						</h2>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+	<script src="js/app.min.js?_v=20230425210004"></script>
+</body>
+
+</html>

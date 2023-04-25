@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Get started</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230425210004">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<main class="get-started get-started-affiliate">
+			<div class="get-started__content">
+				<div class="get-started__container">
+					<div class="get-started__body">
+						<div class="get-started__logo">
+							<img src="img/logo-small.svg" alt="Logo" />
+							<p>Sms2Max</p>
+						</div>
+						<div class="get-started__subtitle">Welcome <span>Back</span></div>
+						<form action="#" class="get-started__form form form-get-started">
+							<div class="form__row">
+								<div class="form__label form-get-started__label">
+									Email Address
+								</div>
+								<input autocomplete="off" type="email" data-required name="form[email]" data-error="Error" placeholder="example@email.com" class="input form-get-started__input" />
+							</div>
+							<div class="form__row">
+								<div class="form__label form-get-started__label">
+									Password
+								</div>
+								<input autocomplete="off" type="password" data-required name="form[email]" data-error="Error" placeholder="8+ strong character" class="input form-get-started__input" />
+							</div>
+							<button type="button" class="form-get-started__forgot">
+								I forgot my password
+							</button>
+							<div class="form-get-started__buttons">
+								<button data-popup="#authentification" type="submit" class="button form-get-started__submit button-started button-started--blue">
+									Sign Up
+								</button>
+								<button type="submit" class="button form-get-started__submit button-started button-started--transparent">
+									Sign In
+								</button>
+							</div>
+							<div class="form-get-started__or">
+								<span>Or sign in with</span>
+							</div>
+							<div class="form-get-started__sign-with">
+								<button type="button" class="form-get-started__sign-with-item">
+									<img src="img/logo-small.svg" alt="Facebook" />
+								</button>
+								<button type="button" class="form-get-started__sign-with-item">
+									<img src="img/get-started/facebook.svg" alt="Facebook" />
+								</button>
+								<button type="button" class="form-get-started__sign-with-item">
+									<img src="img/get-started/facebook.svg" alt="Facebook" />
+								</button>
+							</div>
+							<div class="form-get-started__sign-up">
+								Don’t have an account? <a href="#">Sign Up</a>
+							</div>
+							<div class="form-get-started__copywright">
+								©Copyright Diroro 2023
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="get-started__media media-get-started">
+				<div class="media-get-started__body">
+					<h1 class="media-get-started__title">
+						Welcome to affiliate panel Sms2Max
+					</h1>
+					<div class="media-get-started__text">
+						Let’s get you all set up so you can verify your personal account
+						and begin setting up your profile
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+	<script src="js/app.min.js?_v=20230425210004"></script> <!-- sms -->
+	<div id="cabinet-send-sms" aria-hidden="true" class="popup popup-partner">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__header">
+					<div class="popup__title _icon-message">Send SMS</div>
+					<button data-close type="button" class="popup__close _icon-close"></button>
+				</div>
+				<div class="popup__body">
+					<form action="#" class="popup__form form-partner">
+						<div class="form-partner__row">
+							<label class="form-partner__label">Number</label>
+							<input autocomplete="off" type="tel" data-required data-checked name="form[Number]" data-error="You need to fill out the “Number”" placeholder="" class="input form-partner__input input-tel" />
+						</div>
+						<div class="form-partner__row">
+							<label class="form-partner__label">Message</label>
+							<textarea autocomplete="off" data-required data-checked name="form[Message]" placeholder="" data-error="You need to fill out the “Text”" class="input form-partner__input form-partner__textarea"></textarea>
+						</div>
+						<button type="submit" class="button form-partner__button button-partner _icon-support">
+							Send
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- resets -->
+	<div id="cabinet-resets" aria-hidden="true" class="popup popup-partner">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__header">
+					<div class="popup__title _icon-reset">Resets and Limit</div>
+					<button data-close type="button" class="popup__close _icon-close"></button>
+				</div>
+				<div class="popup__body">
+					<form action="#" class="popup__form form-partner">
+						<div class="form-partner__row">
+							<div class="checkbox">
+								<input id="reset_1" class="checkbox__input" type="checkbox" value="1" name="form[reset]" />
+								<label for="reset_1" class="checkbox__label"><span class="checkbox__text">Reset counter </span></label>
+							</div>
+						</div>
+						<div class="form-partner__row">
+							<label class="form-partner__label">Limit Out</label>
+							<input autocomplete="off" type="text" name="form[limit-out]" placeholder="" class="input form-partner__input" />
+						</div>
+						<div class="form-partner__row">
+							<div class="checkbox">
+								<input id="save-limit_1" class="checkbox__input" type="checkbox" value="1" name="form[save-limit]" />
+								<label for="save-limit_1" class="checkbox__label"><span class="checkbox__text">Save the limit </span></label>
+							</div>
+						</div>
+						<button type="submit" class="button form-partner__button button-partner _icon-save">
+							Save
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- work-mode -->
+	<div id="cabinet-work-mode" aria-hidden="true" class="popup popup-partner">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__header">
+					<div class="popup__title _icon-work-mode">Work mode</div>
+					<button data-close type="button" class="popup__close _icon-close"></button>
+				</div>
+				<div class="popup__body">
+					<form action="#" class="popup__form form-partner">
+						<div class="form-partner__row">
+							<label class="form-partner__label">Work</label>
+							<select name="form[work-mode]" data-class-modif="work-mode">
+								<option value="1">N</option>
+								<option value="2">only in</option>
+								<option value="3">only out</option>
+								<option value="4">both in,out</option>
+							</select>
+						</div>
+
+						<button type="submit" class="button form-partner__button button-partner _icon-save">
+							Save
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- pin -->
+	<div id="cabinet-pin" aria-hidden="true" class="popup popup-partner">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__header">
+					<div class="popup__title _icon-pin">Set PIN</div>
+					<button data-close type="button" class="popup__close _icon-close"></button>
+				</div>
+				<div class="popup__body">
+					<form action="#" class="popup__form form-partner">
+						<div class="form-partner__row">
+							<label class="form-partner__label">Pin</label>
+							<input autocomplete="off" type="text" name="form[pin]" placeholder="" class="input form-partner__input" />
+						</div>
+
+						<button type="submit" class="button form-partner__button button-partner _icon-save">
+							Save
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- set-carrier -->
+	<div id="cabinet-set-carrier" aria-hidden="true" class="popup popup-partner">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__header">
+					<div class="popup__title _icon-network">Set carrier</div>
+					<button data-close type="button" class="popup__close _icon-close"></button>
+				</div>
+				<div class="popup__body">
+					<form action="#" class="popup__form form-partner">
+						<div class="form__row form-partner-advice">
+							Select the actual SIM card operator for automatic number and balance
+							updates
+						</div>
+						<div class="form-partner__row">
+							<label class="form-partner__label">Operator</label>
+							<select name="form[operator]" data-class-modif="operator">
+								<option value="1">N</option>
+								<option value="2">only in</option>
+								<option value="3">only out</option>
+								<option value="4">both in,out</option>
+							</select>
+						</div>
+
+						<button type="submit" class="button form-partner__button button-partner _icon-save">
+							Save
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- send-ussd -->
+	<div id="cabinet-send-ussd" aria-hidden="true" class="popup popup-partner">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__header">
+					<div class="popup__title _icon-keyboard">Send USSD</div>
+					<button data-close type="button" class="popup__close _icon-close"></button>
+				</div>
+				<div class="popup__body">
+					<form action="#" class="popup__form form-partner">
+						<div class="form-partner__row">
+							<div class="form-partner__table">
+								<div class="form-partner__line">
+									<div class="form-partner__port">Port</div>
+									<div class="form-partner__value">Latest reply</div>
+								</div>
+								<div class="form-partner__line">
+									<div class="form-partner__port">COM4</div>
+									<div class="form-partner__value"></div>
+								</div>
+							</div>
+						</div>
+						<div class="form-partner__row">
+							<label class="form-partner__label">Code</label>
+							<input autocomplete="off" type="text" data-required data-checked name="form[Code]" data-error="You need to fill in the Code" placeholder="" class="input form-partner__input" />
+						</div>
+
+						<button type="submit" class="button form-partner__button button-partner _icon-support">
+							Send
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- authentification -->
+	<div id="authentification" aria-hidden="true" class="popup popup-authentification">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__header">
+					<div class="popup__title"></div>
+					<button data-close type="button" class="popup__close _icon-close"></button>
+				</div>
+				<div class="popup__body authentification">
+					<div class="authentification__header">
+						<h3 class="authentification__title">Security check</h3>
+						<div class="authentification__subtitle">Google Confirmation Code</div>
+					</div>
+					<div class="authentification__password">
+						<input autocomplete="off" type="text" data-required data-validate data-error="Verification code does not match" name="form[authentification]" placeholder="" class="input" maxlength="1" />
+						<input autocomplete="off" type="text" data-required data-validate name="form[authentification]" placeholder="" class="input" maxlength="1" />
+						<input autocomplete="off" type="text" data-required data-validate name="form[authentification]" placeholder="" class="input" maxlength="1" />
+						<input autocomplete="off" type="text" data-required data-validate name="form[authentification]" placeholder="" class="input" maxlength="1" />
+						<input autocomplete="off" type="text" data-required data-validate name="form[authentification]" placeholder="" class="input" maxlength="1" />
+						<input autocomplete="off" type="text" data-required data-validate name="form[authentification]" placeholder="" class="input" maxlength="1" />
+					</div>
+					<div class="authentification__problems">
+						<a href="#">Problems with verification?</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 
+<div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрити</button>
+			<div class="popup__text">
+				Text
+			</div>
+		</div>
+	</div>
+</div> -->
+
+</body>
+
+</html>

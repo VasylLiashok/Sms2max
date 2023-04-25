@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Worker</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230425210004">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<main class="cabinet">
+			<sidebar class="cabinet__sidebar sidebar-cabinet">
+				<div class="sidebar-cabinet__content">
+					<a href="#" class="sidebar-cabinet__logo">
+						<img src="img/logo-white.svg" alt="Logo" />
+					</a>
+					<nav data-spollers class="sidebar-cabinet__body">
+						<a href="dashboard.html" class="button sidebar-cabinet__logout sidebar-cabinet__item">
+							<svg class="sidebar-cabinet__item-svg">
+								<use xlink:href="img/icons/icons.svg#dashboard"></use>
+							</svg>
+							<span>Dashboard</span>
+						</a>
+						<div class="sidebar-cabinet__spoller-item">
+							<button type="button" data-spoller class="button sidebar-cabinet__logout sidebar-cabinet__item">
+								<svg class="sidebar-cabinet__item-svg">
+									<use xlink:href="img/icons/icons.svg#analytics"></use>
+								</svg>
+								<span>Analytics</span>
+								<svg class="sidebar-cabinet__item-svg--arrow">
+									<use xlink:href="img/icons/icons.svg#arrow"></use>
+								</svg>
+							</button>
+							<div class="sidebar-cabinet__spoller-body">
+								<a href="history-activation.html" class="button sidebar-cabinet__spoller-button">
+									<svg class="sidebar-cabinet__spoller-button-svg">
+										<use xlink:href="img/icons/icons.svg#circle-check"></use>
+									</svg>
+									<span>History Activation</span>
+								</a>
+								<a href="sim-cards.html" type="button" class="button sidebar-cabinet__spoller-button">
+									<svg class="sidebar-cabinet__spoller-button-svg">
+										<use xlink:href="img/icons/icons.svg#sim"></use>
+									</svg>
+									<span>Sim Cards</span>
+								</a>
+							</div>
+						</div>
+						<div class="sidebar-cabinet__spoller-item">
+							<button type="button" data-spoller class="button sidebar-cabinet__logout sidebar-cabinet__item">
+								<svg class="sidebar-cabinet__item-svg">
+									<use xlink:href="img/icons/icons.svg#workers"></use>
+								</svg>
+								<span>Workers</span>
+								<svg class="sidebar-cabinet__item-svg--arrow">
+									<use xlink:href="img/icons/icons.svg#arrow"></use>
+								</svg>
+							</button>
+							<div class="sidebar-cabinet__spoller-body">
+								<a href="worker.html" class="button sidebar-cabinet__spoller-button sidebar-cabinet__spoller-button--green">
+									<span>UKOut2 (105229103)</span>
+								</a>
+								<a href="#" class="button sidebar-cabinet__spoller-button sidebar-cabinet__spoller-button--red">
+									<span>newworktest</span>
+								</a>
+								<a href="worker-add.html" class="button sidebar-cabinet__spoller-button sidebar-cabinet__spoller-button--add">
+									<svg class="sidebar-cabinet__item-svg">
+										<use xlink:href="img/icons/icons.svg#add"></use>
+									</svg>
+									<span>Add</span>
+								</a>
+							</div>
+						</div>
+						<div class="sidebar-cabinet__spoller-item">
+							<button type="button" data-spoller class="button sidebar-cabinet__logout sidebar-cabinet__item">
+								<svg class="sidebar-cabinet__item-svg">
+									<use xlink:href="img/icons/icons.svg#workers"></use>
+								</svg>
+								<span>API Workers</span>
+								<svg class="sidebar-cabinet__item-svg--arrow">
+									<use xlink:href="img/icons/icons.svg#arrow"></use>
+								</svg>
+							</button>
+							<div class="sidebar-cabinet__spoller-body">
+								<button type="button" class="button sidebar-cabinet__spoller-button sidebar-cabinet__spoller-button--green">
+									<span>UKOut2 (105229103)</span>
+								</button>
+								<button type="button" class="button sidebar-cabinet__spoller-button sidebar-cabinet__spoller-button--red">
+									<span>newworktest</span>
+								</button>
+								<button type="button" class="button sidebar-cabinet__spoller-button sidebar-cabinet__spoller-button--add">
+									<svg class="sidebar-cabinet__item-svg">
+										<use xlink:href="img/icons/icons.svg#add"></use>
+									</svg>
+									<span>Add</span>
+								</button>
+							</div>
+						</div>
+						<a href="users.html" class="button sidebar-cabinet__logout sidebar-cabinet__item">
+							<svg class="sidebar-cabinet__item-svg">
+								<use xlink:href="img/icons/icons.svg#users"></use>
+							</svg>
+							<span>Users</span>
+						</a>
+						<div class="sidebar-cabinet__spoller-item">
+							<button type="button" data-spoller class="button sidebar-cabinet__logout sidebar-cabinet__item">
+								<svg class="sidebar-cabinet__item-svg">
+									<use xlink:href="img/icons/icons.svg#billing"></use>
+								</svg>
+								<span>Billing</span>
+								<svg class="sidebar-cabinet__item-svg--arrow">
+									<use xlink:href="img/icons/icons.svg#arrow"></use>
+								</svg>
+							</button>
+							<div class="sidebar-cabinet__spoller-body">
+								<a href="balance-usd.html" class="button sidebar-cabinet__spoller-button item-active">
+									<span>USD</span>
+								</a>
+								<button type="button" class="button sidebar-cabinet__spoller-button">
+									<span>EUR</span>
+								</button>
+							</div>
+						</div>
+						<a href="prices.html" class="button sidebar-cabinet__logout sidebar-cabinet__item">
+							<svg class="sidebar-cabinet__item-svg">
+								<use xlink:href="img/icons/icons.svg#prices"></use>
+							</svg>
+							<span>Prices</span>
+						</a>
+						<a href="support.html" class="button sidebar-cabinet__logout sidebar-cabinet__item">
+							<svg class="sidebar-cabinet__item-svg">
+								<use xlink:href="img/icons/icons.svg#support"></use>
+							</svg>
+							<span>Support</span>
+						</a>
+					</nav>
+					<button type="button" class="button sidebar-cabinet__logout sidebar-cabinet__item">
+						<svg class="sidebar-cabinet__item-svg">
+							<use xlink:href="img/icons/icons.svg#log-out"></use>
+						</svg>
+						<span>Log out</span>
+					</button>
+				</div>
+			</sidebar>
+			<div class="cabinet__body cabinet-body cabinet-body--overflow">
+				<div data-lp class="cabinet-body__header">
+					<button type="button" class="menu__icon icon-menu cabinet-icon-menu">
+						<span></span>
+					</button>
+					<div class="cabinet-body__header-content">
+						<div class="cabinet-body__header-balance">
+							<span>Balance</span>
+							<a href="#" class="cabinet-balance-US">0.0010$</a>
+							<a href="#" class="cabinet-balance-EUR">0.0010€</a>
+						</div>
+						<div class="cabinet-body__header-actions">
+							<div class="cabinet-body__header-language">
+								<select name="form[languages]" data-class-modif="actions-header-languages">
+									<option value="1" selected>Eng</option>
+									<option value="2">UA</option>
+								</select>
+							</div>
+
+							<button type="button" class="cabinet-body__header-user">
+								<div class="actions-header__user">
+									<svg class="actions-header__user-svg">
+										<use xlink:href="img/icons/icons.svg#user-white"></use>
+									</svg>
+								</div>
+							</button>
+						</div>
+					</div>
+				</div>
+				<h2 class="cabinet-body__title">
+					Worker <span>UKOut2 (105229103)</span>
+				</h2>
+				<div class="cabinet-body__content worker">
+					<div class="worker__actions">
+						<button type="button" class="worker__actions-item item-worker-actions item-worker-actions--white">
+							<div class="item-worker-actions__icon">
+								<svg class="item-worker-actions__svg">
+									<use xlink:href="img/icons/icons.svg#edit"></use>
+								</svg>
+							</div>
+							<p>Rename</p>
+						</button>
+						<button type="button" class="worker__actions-item item-worker-actions item-worker-actions--red">
+							<div class="item-worker-actions__icon">
+								<svg class="item-worker-actions__svg">
+									<use xlink:href="img/icons/icons.svg#power"></use>
+								</svg>
+							</div>
+							<p>Stop Work</p>
+						</button>
+						<button type="button" class="worker__actions-item item-worker-actions item-worker-actions--blue">
+							<div class="item-worker-actions__icon">
+								<svg class="item-worker-actions__svg">
+									<use xlink:href="img/icons/icons.svg#keyboard"></use>
+								</svg>
+							</div>
+							<p>Assign numbers</p>
+						</button>
+						<button type="button" class="worker__actions-item item-worker-actions item-worker-actions--red">
+							<div class="item-worker-actions__icon">
+								<svg class="item-worker-actions__svg">
+									<use xlink:href="img/icons/icons.svg#delete"></use>
+								</svg>
+							</div>
+							<p>Delete numbers</p>
+						</button>
+						<button type="button" class="worker__actions-item item-worker-actions item-worker-actions--red">
+							<div class="item-worker-actions__icon">
+								<svg class="item-worker-actions__svg">
+									<use xlink:href="img/icons/icons.svg#reset"></use>
+								</svg>
+							</div>
+							<p>Reset Token</p>
+						</button>
+						<button type="button" class="worker__actions-item item-worker-actions item-worker-actions--blue">
+							<div class="item-worker-actions__icon">
+								<svg class="item-worker-actions__svg">
+									<use xlink:href="img/icons/icons.svg#download"></use>
+								</svg>
+							</div>
+							<p>Download worker.zip</p>
+						</button>
+						<button type="button" class="worker__actions-item item-worker-actions item-worker-actions--white">
+							<div class="item-worker-actions__icon">
+								<svg class="item-worker-actions__svg">
+									<use xlink:href="img/icons/icons.svg#instructions"></use>
+								</svg>
+							</div>
+							<p>Instruction</p>
+						</button>
+					</div>
+					<div class="worker__status">
+						<div class="worker__status-item item-worker-status item-worker-status--online">
+							<div class="item-worker-status__icon"></div>
+							<div class="item-worker-status__value">Online</div>
+						</div>
+						<div class="worker__status-item item-worker-status item-worker-status--online">
+							<div class="item-worker-status__icon"></div>
+							<div class="item-worker-status__value">Active</div>
+						</div>
+						<div class="worker__status-item item-worker-status">
+							<div class="item-worker-status__icon">
+								<img src="img/cabinet/IP.svg" alt="label" />
+							</div>
+							<div class="item-worker-status__value">86.30.122.67</div>
+						</div>
+						<div class="worker__status-item item-worker-status">
+							<div class="item-worker-status__icon">
+								<img src="img/cabinet/Ver.svg" alt="label" />
+							</div>
+							<div class="item-worker-status__value">0.9.9 async win32</div>
+						</div>
+						<div class="worker__status-item item-worker-status">
+							<div class="item-worker-status__icon">
+								<img src="img/cabinet/CPU.svg" alt="label" />
+							</div>
+							<div class="item-worker-status__value">49,01 %</div>
+						</div>
+						<div class="worker__status-item item-worker-status">
+							<div class="item-worker-status__icon">
+								<img src="img/cabinet/Ram.svg" alt="label" />
+							</div>
+							<div class="item-worker-status__value">
+								40,91 % <span>(3467 MB/8476 MB)</span>
+							</div>
+						</div>
+						<div class="worker__status-item item-worker-status">
+							<div class="item-worker-status__icon">
+								<img src="img/cabinet/flag.svg" alt="label" />
+							</div>
+							<div class="item-worker-status__value">default country</div>
+						</div>
+						<div class="worker__status-item item-worker-status">
+							<div class="item-worker-status__value">
+								Default provider : Etisalat
+							</div>
+						</div>
+					</div>
+					<div class="dashboard__columns worker__columns">
+						<div class="dashboard__row">
+							<div class="dashboard__earnings earnings">
+								<div class="earnings__header">
+									<div class="earnings__days">
+										<div class="earnings__days-left">
+											<button type="button" class="earnings__days-item earnings__days-item--active">
+												All Time
+											</button>
+											<button type="button" class="earnings__days-item">
+												SIM Average
+											</button>
+										</div>
+										<div class="earnings__days-right">
+											<button type="button" class="earnings__days-item">
+												1H
+											</button>
+											<button type="button" class="earnings__days-item">
+												24H
+											</button>
+											<button type="button" class="earnings__days-item earnings__days-item--active">
+												1W
+											</button>
+											<button type="button" class="earnings__days-item">
+												1M
+											</button>
+											<button type="button" class="earnings__days-item">
+												1Y
+											</button>
+											<button type="button" class="earnings__days-item">
+												ALL
+											</button>
+										</div>
+									</div>
+									<div class="earnings__count">100$</div>
+								</div>
+								<div class="earnings__diagram">
+									<picture><source srcset="img/cabinet/diagram.webp" type="image/webp"><img src="img/cabinet/diagram.png" alt="Diagram" /></picture>
+								</div>
+								<div class="earnings__footer">
+									<div class="earnings__days-item">FEB 8</div>
+									<div class="earnings__days-item">FEB 8</div>
+									<div class="earnings__days-item">FEB 8</div>
+									<div class="earnings__days-item">FEB 8</div>
+									<div class="earnings__days-item">FEB 8</div>
+									<div class="earnings__days-item">FEB 8</div>
+								</div>
+							</div>
+						</div>
+						<div class="dashboard__row">
+							<div class="dashboard__row-body">
+								<div class="dashboard__row-item dashboard__row-item--offline dashboard__row-item--red">
+									<div class="dashboard__row-status dashboard__row-status--modem">
+										<div class="dashboard__row-icons dashboard__row-icons--modem">
+											<svg class="dashboard__row-status-svg dashboard__row-status-svg--modem">
+												<use xlink:href="img/icons/icons.svg#signal"></use>
+											</svg>
+										</div>
+										<div class="dashboard__row-activity">No connect</div>
+									</div>
+									<div class="dashboard__row-count">83</div>
+								</div>
+								<div class="dashboard__row-item dashboard__row-item--online dashboard__row-item--green">
+									<div class="dashboard__row-status dashboard__row-status--modem">
+										<div class="dashboard__row-icons dashboard__row-icons--modem"></div>
+										<div class="dashboard__row-activity">In work</div>
+									</div>
+									<div class="dashboard__row-count">10</div>
+								</div>
+								<div class="dashboard__row-item dashboard__row-item--noconnect dashboard__row-item--red">
+									<div class="dashboard__row-status dashboard__row-status--modem">
+										<div class="dashboard__row-icons dashboard__row-icons--modem"></div>
+										<div class="dashboard__row-activity">Offline</div>
+									</div>
+									<div class="dashboard__row-count">10</div>
+								</div>
+								<div class="dashboard__row-item dashboard__row-item--offline dashboard__row-item--red">
+									<div class="dashboard__row-status dashboard__row-status--modem">
+										<div class="dashboard__row-icons dashboard__row-icons--modem">
+											<svg class="dashboard__row-status-svg dashboard__row-status-svg--modem">
+												<use xlink:href="img/icons/icons.svg#ready"></use>
+											</svg>
+										</div>
+										<div class="dashboard__row-activity">Ready to work</div>
+									</div>
+									<div class="dashboard__row-count">0</div>
+								</div>
+								<div class="dashboard__row-item dashboard__row-item--offline dashboard__row-item--red">
+									<div class="dashboard__row-status dashboard__row-status--modem">
+										<div class="dashboard__row-icons dashboard__row-icons--modem">
+											<svg class="dashboard__row-status-svg dashboard__row-status-svg--modem">
+												<use xlink:href="img/icons/icons.svg#sim"></use>
+											</svg>
+										</div>
+										<div class="dashboard__row-activity">No SIM card</div>
+									</div>
+									<div class="dashboard__row-count">83</div>
+								</div>
+								<div class="dashboard__row-item dashboard__row-item--grey">
+									<div class="dashboard__row-total">Total</div>
+									<div class="dashboard__row-count">165</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="worker__settings">
+						<h2 class="cabinet-body__title">
+							<p>Showing 1 - 1 of 1 items</p>
+						</h2>
+						<div class="worker__settings-items">
+							<button data-popup="#cabinet-send-ussd" type="button" class="worker__settings-item item-worker-settings">
+								<div class="item-worker-settings__icon">
+									<svg class="item-worker-settings__svg">
+										<use xlink:href="img/icons/icons.svg#keyboard"></use>
+									</svg>
+								</div>
+								<p>Send USSD</p>
+							</button>
+							<button type="button" data-popup="#cabinet-send-sms" class="worker__settings-item item-worker-settings">
+								<div class="item-worker-settings__icon">
+									<svg class="item-worker-settings__svg">
+										<use xlink:href="img/icons/icons.svg#message"></use>
+									</svg>
+								</div>
+								<p>Send SMS</p>
+							</button>
+							<button data-popup="#cabinet-work-mode" type="button" class="worker__settings-item item-worker-settings">
+								<div class="item-worker-settings__icon">
+									<svg class="item-worker-settings__svg">
+										<use xlink:href="img/icons/icons.svg#work-mode"></use>
+									</svg>
+								</div>
+								<p>Work mode</p>
+							</button>
+							<button data-popup="#cabinet-set-carrier" type="button" class="worker__settings-item item-worker-settings">
+								<div class="item-worker-settings__icon">
+									<svg class="item-worker-settings__svg">
+										<use xlink:href="img/icons/icons.svg#network"></use>
+									</svg>
+								</div>
+								<p>Set carrier</p>
+							</button>
+							<button data-popup="#cabinet-pin" type="button" class="worker__settings-item item-worker-settings">
+								<div class="item-worker-settings__icon">
+									<svg class="item-worker-settings__svg">
+										<use xlink:href="img/icons/icons.svg#pin"></use>
+									</svg>
+								</div>
+								<p>Set PIN</p>
+							</button>
+							<button data-popup="#cabinet-resets" type="button" class="worker__settings-item item-worker-settings">
+								<div class="item-worker-settings__icon">
+									<svg class="item-worker-settings__svg">
+										<use xlink:href="img/icons/icons.svg#reset"></use>
+									</svg>
+								</div>
+								<p>Resets and Limit</p>
+							</button>
+						</div>
+					</div>
+					<div class="worker-table__body cabinet-shadow-box">
+						<div class="history-activations__content-wrapper">
+							<div class="worker-table__header">
+								<div class="worker-table__header-top worker-table__row">
+									<div class="worker-table__item">
+										<div class="checkbox">
+											<input id="worker_all" class="checkbox__input" type="checkbox" value="1" name="form[worker]" />
+											<label for="worker_all" class="checkbox__label"></label>
+										</div>
+									</div>
+									<button type="button" class="worker-table__item">
+										Port
+									</button>
+									<button type="button" class="worker-table__item">
+										Status
+									</button>
+									<button type="button" class="worker-table__item">
+										Sim
+									</button>
+									<button type="button" class="worker-table__item">
+										GSM
+									</button>
+									<button type="button" class="worker-table__item">
+										Work
+									</button>
+									<button type="button" class="worker-table__item">
+										Sim Country
+									</button>
+									<button type="button" class="worker-table__item">
+										Number
+									</button>
+									<button type="button" class="worker-table__item">
+										Sim Carrier
+									</button>
+									<button type="button" class="worker-table__item">
+										Iccid
+									</button>
+									<button type="button" class="worker-table__item">
+										IN/Out
+									</button>
+									<button type="button" class="worker-table__item">
+										Limit out
+									</button>
+									<button type="button" class="worker-table__item">
+										Balance
+									</button>
+									<button type="button" class="worker-table__item">
+										RSSI
+									</button>
+									<button type="button" class="worker-table__item worker-table__item--accepted">
+										<span>
+											<svg class="worker-table__item--svg">
+												<use xlink:href="img/icons/icons.svg#check"></use>
+											</svg>
+										</span>
+									</button>
+									<button type="button" class="worker-table__item worker-table__item--canceled">
+										<span>
+											<svg class="worker-table__item--svg">
+												<use xlink:href="img/icons/icons.svg#circle-close"></use>
+											</svg>
+										</span>
+									</button>
+									<button type="button" class="worker-table__item">
+										EUR
+									</button>
+									<button type="button" class="worker-table__item">
+										USD
+									</button>
+									<button type="button" class="worker-table__item worker-table__item--question">
+										<span>?</span>
+									</button>
+									<button type="button" class="worker-table__item"></button>
+								</div>
+							</div>
+							<div class="worker-table__rows">
+								<div class="worker-table__rows-item worker-table__row">
+									<div class="worker-table__item">
+										<div class="checkbox">
+											<input id="worker_1" class="checkbox__input" type="checkbox" value="1" name="form[worker]" />
+											<label for="worker_1" class="checkbox__label"></label>
+										</div>
+									</div>
+									<div class="worker-table__item">4</div>
+									<div class="worker-table__item worker-table__item--accepted">
+										<span>
+											<svg class="worker-table__item--svg">
+												<use xlink:href="img/icons/icons.svg#check"></use>
+											</svg>
+										</span>
+									</div>
+									<div class="worker-table__item worker-table__item--decline">
+										<span>
+											<svg class="worker-table__item--svg">
+												<use xlink:href="img/icons/icons.svg#close"></use>
+											</svg>
+										</span>
+									</div>
+									<div class="worker-table__item worker-table__item--decline">
+										<span>
+											<svg class="worker-table__item--svg">
+												<use xlink:href="img/icons/icons.svg#close"></use>
+											</svg>
+										</span>
+									</div>
+									<div class="worker-table__item worker-table__item--out">
+										<span> Out</span>
+									</div>
+									<div class="worker-table__item"></div>
+									<div class="worker-table__item"></div>
+									<div class="worker-table__item">EE</div>
+									<div class="worker-table__item">-</div>
+									<div class="worker-table__item">0/0</div>
+									<div class="worker-table__item">0</div>
+									<div class="worker-table__item">
+										<span></span>
+										<button type="button">
+											<svg class="worker-table__item-svg--refresh">
+												<use xlink:href="img/icons/icons.svg#refresh"></use>
+											</svg>
+										</button>
+									</div>
+									<div class="worker-table__item"></div>
+									<div class="worker-table__item">0</div>
+									<div class="worker-table__item">0</div>
+									<div class="worker-table__item">-</div>
+									<div class="worker-table__item">-</div>
+									<div class="worker-table__item worker-table__item--question">
+										<span>?</span>
+									</div>
+									<button type="button" class="worker-table__item worker-table__item--delete">
+										<span>
+											<svg class="worker-table__item--svg">
+												<use xlink:href="img/icons/icons.svg#delete"></use>
+											</svg>
+										</span>
+									</button>
+								</div>
+								<div class="worker-table__rows-item worker-table__row">
+									<div class="worker-table__item">
+										<div class="checkbox">
+											<input id="worker_1" class="checkbox__input" type="checkbox" value="1" name="form[worker]" />
+											<label for="worker_1" class="checkbox__label"></label>
+										</div>
+									</div>
+									<div class="worker-table__item">4</div>
+									<div class="worker-table__item worker-table__item--accepted">
+										<span>
+											<svg class="worker-table__item--svg">
+												<use xlink:href="img/icons/icons.svg#check"></use>
+											</svg>
+										</span>
+									</div>
+									<div class="worker-table__item worker-table__item--decline">
+										<span>
+											<svg class="worker-table__item--svg">
+												<use xlink:href="img/icons/icons.svg#close"></use>
+											</svg>
+										</span>
+									</div>
+									<div class="worker-table__item worker-table__item--decline">
+										<span>
+											<svg class="worker-table__item--svg">
+												<use xlink:href="img/icons/icons.svg#close"></use>
+											</svg>
+										</span>
+									</div>
+									<div class="worker-table__item worker-table__item--out">
+										<span> Out</span>
+									</div>
+									<div class="worker-table__item"></div>
+									<div class="worker-table__item"></div>
+									<div class="worker-table__item">EE</div>
+									<div class="worker-table__item">-</div>
+									<div class="worker-table__item">0/0</div>
+									<div class="worker-table__item">0</div>
+									<div class="worker-table__item">
+										<span></span>
+										<button type="button">
+											<svg class="worker-table__item-svg--refresh">
+												<use xlink:href="img/icons/icons.svg#refresh"></use>
+											</svg>
+										</button>
+									</div>
+									<div class="worker-table__item"></div>
+									<div class="worker-table__item">0</div>
+									<div class="worker-table__item">0</div>
+									<div class="worker-table__item">-</div>
+									<div class="worker-table__item">-</div>
+									<div class="worker-table__item worker-table__item--question">
+										<span>?</span>
+									</div>
+									<button type="button" class="worker-table__item worker-table__item--delete">
+										<span>
+											<svg class="worker-table__item--svg">
+												<use xlink:href="img/icons/icons.svg#delete"></use>
+											</svg>
+										</span>
+									</button>
+								</div>
+								<div class="worker-table__rows-item worker-table__row">
+									<div class="worker-table__item">
+										<div class="checkbox">
+											<input id="worker_1" class="checkbox__input" type="checkbox" value="1" name="form[worker]" />
+											<label for="worker_1" class="checkbox__label"></label>
+										</div>
+									</div>
+									<div class="worker-table__item">4</div>
+									<div class="worker-table__item worker-table__item--accepted">
+										<span>
+											<svg class="worker-table__item--svg">
+												<use xlink:href="img/icons/icons.svg#check"></use>
+											</svg>
+										</span>
+									</div>
+									<div class="worker-table__item worker-table__item--decline">
+										<span>
+											<svg class="worker-table__item--svg">
+												<use xlink:href="img/icons/icons.svg#close"></use>
+											</svg>
+										</span>
+									</div>
+									<div class="worker-table__item worker-table__item--decline">
+										<span>
+											<svg class="worker-table__item--svg">
+												<use xlink:href="img/icons/icons.svg#close"></use>
+											</svg>
+										</span>
+									</div>
+									<div class="worker-table__item worker-table__item--out">
+										<span> Out</span>
+									</div>
+									<div class="worker-table__item"></div>
+									<div class="worker-table__item"></div>
+									<div class="worker-table__item">EE</div>
+									<div class="worker-table__item">-</div>
+									<div class="worker-table__item">0/0</div>
+									<div class="worker-table__item">0</div>
+									<div class="worker-table__item">
+										<span></span>
+										<button type="button">
+											<svg class="worker-table__item-svg--refresh">
+												<use xlink:href="img/icons/icons.svg#refresh"></use>
+											</svg>
+										</button>
+									</div>
+									<div class="worker-table__item"></div>
+									<div class="worker-table__item">0</div>
+									<div class="worker-table__item">0</div>
+									<div class="worker-table__item">-</div>
+									<div class="worker-table__item">-</div>
+									<div class="worker-table__item worker-table__item--question">
+										<span>?</span>
+									</div>
+									<button type="button" class="worker-table__item worker-table__item--delete">
+										<span>
+											<svg class="worker-table__item--svg">
+												<use xlink:href="img/icons/icons.svg#delete"></use>
+											</svg>
+										</span>
+									</button>
+								</div>
+								<div class="worker-table__rows-item worker-table__row">
+									<div class="worker-table__item">
+										<div class="checkbox">
+											<input id="worker_1" class="checkbox__input" type="checkbox" value="1" name="form[worker]" />
+											<label for="worker_1" class="checkbox__label"></label>
+										</div>
+									</div>
+									<div class="worker-table__item">4</div>
+									<div class="worker-table__item worker-table__item--accepted">
+										<span>
+											<svg class="worker-table__item--svg">
+												<use xlink:href="img/icons/icons.svg#check"></use>
+											</svg>
+										</span>
+									</div>
+									<div class="worker-table__item worker-table__item--decline">
+										<span>
+											<svg class="worker-table__item--svg">
+												<use xlink:href="img/icons/icons.svg#close"></use>
+											</svg>
+										</span>
+									</div>
+									<div class="worker-table__item worker-table__item--decline">
+										<span>
+											<svg class="worker-table__item--svg">
+												<use xlink:href="img/icons/icons.svg#close"></use>
+											</svg>
+										</span>
+									</div>
+									<div class="worker-table__item worker-table__item--out">
+										<span> Out</span>
+									</div>
+									<div class="worker-table__item"></div>
+									<div class="worker-table__item"></div>
+									<div class="worker-table__item">EE</div>
+									<div class="worker-table__item">-</div>
+									<div class="worker-table__item">0/0</div>
+									<div class="worker-table__item">0</div>
+									<div class="worker-table__item">
+										<span></span>
+										<button type="button">
+											<svg class="worker-table__item-svg--refresh">
+												<use xlink:href="img/icons/icons.svg#refresh"></use>
+											</svg>
+										</button>
+									</div>
+									<div class="worker-table__item"></div>
+									<div class="worker-table__item">0</div>
+									<div class="worker-table__item">0</div>
+									<div class="worker-table__item">-</div>
+									<div class="worker-table__item">-</div>
+									<div class="worker-table__item worker-table__item--question">
+										<span>?</span>
+									</div>
+									<button type="button" class="worker-table__item worker-table__item--delete">
+										<span>
+											<svg class="worker-table__item--svg">
+												<use xlink:href="img/icons/icons.svg#delete"></use>
+											</svg>
+										</span>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+	<script src="js/app.min.js?_v=20230425210004"></script> <!-- sms -->
+	<div id="cabinet-send-sms" aria-hidden="true" class="popup popup-partner">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__header">
+					<div class="popup__title _icon-message">Send SMS</div>
+					<button data-close type="button" class="popup__close _icon-close"></button>
+				</div>
+				<div class="popup__body">
+					<form action="#" class="popup__form form-partner">
+						<div class="form-partner__row">
+							<label class="form-partner__label">Number</label>
+							<input autocomplete="off" type="tel" data-required data-checked name="form[Number]" data-error="You need to fill out the “Number”" placeholder="" class="input form-partner__input input-tel" />
+						</div>
+						<div class="form-partner__row">
+							<label class="form-partner__label">Message</label>
+							<textarea autocomplete="off" data-required data-checked name="form[Message]" placeholder="" data-error="You need to fill out the “Text”" class="input form-partner__input form-partner__textarea"></textarea>
+						</div>
+						<button type="submit" class="button form-partner__button button-partner _icon-support">
+							Send
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- resets -->
+	<div id="cabinet-resets" aria-hidden="true" class="popup popup-partner">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__header">
+					<div class="popup__title _icon-reset">Resets and Limit</div>
+					<button data-close type="button" class="popup__close _icon-close"></button>
+				</div>
+				<div class="popup__body">
+					<form action="#" class="popup__form form-partner">
+						<div class="form-partner__row">
+							<div class="checkbox">
+								<input id="reset_1" class="checkbox__input" type="checkbox" value="1" name="form[reset]" />
+								<label for="reset_1" class="checkbox__label"><span class="checkbox__text">Reset counter </span></label>
+							</div>
+						</div>
+						<div class="form-partner__row">
+							<label class="form-partner__label">Limit Out</label>
+							<input autocomplete="off" type="text" name="form[limit-out]" placeholder="" class="input form-partner__input" />
+						</div>
+						<div class="form-partner__row">
+							<div class="checkbox">
+								<input id="save-limit_1" class="checkbox__input" type="checkbox" value="1" name="form[save-limit]" />
+								<label for="save-limit_1" class="checkbox__label"><span class="checkbox__text">Save the limit </span></label>
+							</div>
+						</div>
+						<button type="submit" class="button form-partner__button button-partner _icon-save">
+							Save
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- work-mode -->
+	<div id="cabinet-work-mode" aria-hidden="true" class="popup popup-partner">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__header">
+					<div class="popup__title _icon-work-mode">Work mode</div>
+					<button data-close type="button" class="popup__close _icon-close"></button>
+				</div>
+				<div class="popup__body">
+					<form action="#" class="popup__form form-partner">
+						<div class="form-partner__row">
+							<label class="form-partner__label">Work</label>
+							<select name="form[work-mode]" data-class-modif="work-mode">
+								<option value="1">N</option>
+								<option value="2">only in</option>
+								<option value="3">only out</option>
+								<option value="4">both in,out</option>
+							</select>
+						</div>
+
+						<button type="submit" class="button form-partner__button button-partner _icon-save">
+							Save
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- pin -->
+	<div id="cabinet-pin" aria-hidden="true" class="popup popup-partner">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__header">
+					<div class="popup__title _icon-pin">Set PIN</div>
+					<button data-close type="button" class="popup__close _icon-close"></button>
+				</div>
+				<div class="popup__body">
+					<form action="#" class="popup__form form-partner">
+						<div class="form-partner__row">
+							<label class="form-partner__label">Pin</label>
+							<input autocomplete="off" type="text" name="form[pin]" placeholder="" class="input form-partner__input" />
+						</div>
+
+						<button type="submit" class="button form-partner__button button-partner _icon-save">
+							Save
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- set-carrier -->
+	<div id="cabinet-set-carrier" aria-hidden="true" class="popup popup-partner">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__header">
+					<div class="popup__title _icon-network">Set carrier</div>
+					<button data-close type="button" class="popup__close _icon-close"></button>
+				</div>
+				<div class="popup__body">
+					<form action="#" class="popup__form form-partner">
+						<div class="form__row form-partner-advice">
+							Select the actual SIM card operator for automatic number and balance
+							updates
+						</div>
+						<div class="form-partner__row">
+							<label class="form-partner__label">Operator</label>
+							<select name="form[operator]" data-class-modif="operator">
+								<option value="1">N</option>
+								<option value="2">only in</option>
+								<option value="3">only out</option>
+								<option value="4">both in,out</option>
+							</select>
+						</div>
+
+						<button type="submit" class="button form-partner__button button-partner _icon-save">
+							Save
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- send-ussd -->
+	<div id="cabinet-send-ussd" aria-hidden="true" class="popup popup-partner">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__header">
+					<div class="popup__title _icon-keyboard">Send USSD</div>
+					<button data-close type="button" class="popup__close _icon-close"></button>
+				</div>
+				<div class="popup__body">
+					<form action="#" class="popup__form form-partner">
+						<div class="form-partner__row">
+							<div class="form-partner__table">
+								<div class="form-partner__line">
+									<div class="form-partner__port">Port</div>
+									<div class="form-partner__value">Latest reply</div>
+								</div>
+								<div class="form-partner__line">
+									<div class="form-partner__port">COM4</div>
+									<div class="form-partner__value"></div>
+								</div>
+							</div>
+						</div>
+						<div class="form-partner__row">
+							<label class="form-partner__label">Code</label>
+							<input autocomplete="off" type="text" data-required data-checked name="form[Code]" data-error="You need to fill in the Code" placeholder="" class="input form-partner__input" />
+						</div>
+
+						<button type="submit" class="button form-partner__button button-partner _icon-support">
+							Send
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- authentification -->
+	<div id="authentification" aria-hidden="true" class="popup popup-authentification">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__header">
+					<div class="popup__title"></div>
+					<button data-close type="button" class="popup__close _icon-close"></button>
+				</div>
+				<div class="popup__body authentification">
+					<div class="authentification__header">
+						<h3 class="authentification__title">Security check</h3>
+						<div class="authentification__subtitle">Google Confirmation Code</div>
+					</div>
+					<div class="authentification__password">
+						<input autocomplete="off" type="text" data-required data-validate data-error="Verification code does not match" name="form[authentification]" placeholder="" class="input" maxlength="1" />
+						<input autocomplete="off" type="text" data-required data-validate name="form[authentification]" placeholder="" class="input" maxlength="1" />
+						<input autocomplete="off" type="text" data-required data-validate name="form[authentification]" placeholder="" class="input" maxlength="1" />
+						<input autocomplete="off" type="text" data-required data-validate name="form[authentification]" placeholder="" class="input" maxlength="1" />
+						<input autocomplete="off" type="text" data-required data-validate name="form[authentification]" placeholder="" class="input" maxlength="1" />
+						<input autocomplete="off" type="text" data-required data-validate name="form[authentification]" placeholder="" class="input" maxlength="1" />
+					</div>
+					<div class="authentification__problems">
+						<a href="#">Problems with verification?</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 
+<div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрити</button>
+			<div class="popup__text">
+				Text
+			</div>
+		</div>
+	</div>
+</div> -->
+
+</body>
+
+</html>
